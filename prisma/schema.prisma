@@ -1,0 +1,72 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Valorant {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  gameName      String @default("Valorant")
+  gameBanner    String @default("https://static-cdn.jtvnw.net/ttv-boxart/516575-188x250.jpg")
+  nickname      String   
+  yearsPlaying  Int
+  discord       String
+  createdAt     DateTime @default(now())
+}
+
+model Minecraft {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  gameName      String @default("Minecraft")
+  gameBanner    String @default("https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-144x192.jpg")
+  nickname      String  
+  yearsPlaying  Int
+  discord       String
+  createdAt     DateTime @default(now())
+}
+
+model GTA {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  gameName      String @default("GTA")
+  gameBanner    String @default("https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg")
+  nickname      String  
+  yearsPlaying  Int
+  discord       String
+  createdAt     DateTime @default(now())
+}
+
+model CSGO {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  gameName      String @default("CSGO")
+  gameBanner    String @default("https://static-cdn.jtvnw.net/ttv-boxart/32399_IGDB-188x250.jpg")
+  nickname      String  
+  yearsPlaying  Int
+  discord       String
+  createdAt     DateTime @default(now())
+}
+
+model Warzone {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  gameName      String @default("Warzone")
+  gameBanner    String @default("https://static-cdn.jtvnw.net/ttv-boxart/512710-188x250.jpg")
+  nickname      String  
+  yearsPlaying  Int
+  discord       String
+  createdAt     DateTime @default(now())
+}
+
+model Overwatch {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  gameName      String @default("Overwatch")
+  gameBanner    String @default("https://static-cdn.jtvnw.net/ttv-boxart/515025-188x250.jpg")
+  nickname      String  
+  yearsPlaying  Int
+  discord       String
+  createdAt     DateTime @default(now())
+}
+

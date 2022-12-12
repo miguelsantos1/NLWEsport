@@ -1,3 +1,5 @@
+const { withRouter } = require('next/router');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,7 +7,14 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    colors: {
+      background: '#121214',
+      textColor: '#ffff',
+      purple: '#611bbc'
+    }, 
+    fontFamily: {
+      'sans': ['Poppins', 'sans-serif'],
+    }
   },
   plugins: [],
 }
