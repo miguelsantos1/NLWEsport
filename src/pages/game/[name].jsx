@@ -21,7 +21,7 @@ export default function Game(props) {
   const [game, setGame] = useState([])
 
   useEffect(() => {
-    axios(`http://localhost:3000/api/games/${props.name}/`).then((response => {
+    axios(`/api/games/${props.name}/`).then((response => {
       setGame(response.data)
     }))
   }, [])
