@@ -35,14 +35,14 @@ export default function Game(props) {
     <Link href="/">
       <h1 className="text-textColor text-center font-black sm:mt-14 text-3xl sm:text-5xl"> <span className="text-purple"> 	&lt; { nameToUpperCase } </span> <span className="text-purple"> &gt; </span> </h1>
     </Link>
-      <h2 className="text-textColor text-center font-extrabold my-4 text-xl sm:mb-16">  <span className="text-purple"> 	&lt; </span> { game.length } Anúncio (s)<span className="text-purple"> &gt; </span></h2>
+      <h2 className="text-textColor text-center font-extrabold my-5 text-xl sm:mb-16">  <span className="text-purple"> 	&lt; </span> { game.length } Anúncio (s)<span className="text-purple"> &gt; </span></h2>
     </header>
 
-      <Link href={`/post/${props.name}`}>
-        <div className="inline-block text-textColor rounded px-4 py-3 mb-4 font-bold hover:bg-purple/50 bg-purple/80"><h3> Fazer um anúncio </h3></div>
+      <Link className="justify-center" href={`/post/${props.name}`}>
+        <div className="text-center text-textColor rounded px-4 py-3 mb-9 font-bold hover:bg-purple/50 bg-purple/80"><h3> Fazer um anúncio </h3></div>
       </Link>
 
-      <section className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+      <section className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 mb-20">
 
           { game.map(ads => {
             return(
