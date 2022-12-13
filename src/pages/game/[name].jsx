@@ -63,9 +63,6 @@ export default function Game(props) {
           
         </section>
 
-          <p className="mx-auto text-textColor bg-[#00000060] px-2 rounded text-center font-bold fixed bottom-1"> Os anúncios podem demorar um pouco para aparecer </p>
-
-
       </div>
 
   )
