@@ -12,6 +12,6 @@ export default async function CreateAdValorant(req, res) {
     }
   })
 
-  res.status(201).json(adGame)
+  res.status(201).send('<h1> Dados enviados</h1> <a href="/game/valorant"> Voltar aos anuncios <a/>')
 
 }
