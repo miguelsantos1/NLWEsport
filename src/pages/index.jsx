@@ -54,7 +54,7 @@ export default function Home() {
        
       </section>
 
-      <footer className="bg-purple/5 px-10 py-5 my-10 rounded-lg">
+      <footer className="bg-purple/20 px-10 py-5 my-10 rounded-lg">
         <div>
           <h3 className="text-textColor font-extrabold text-xl">Não encontrou seu DUO?</h3>
           <p className="text-textColor"> Publique um anúncio para encontrar novos players </p>
