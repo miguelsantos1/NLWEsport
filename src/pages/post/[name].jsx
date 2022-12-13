@@ -1,8 +1,10 @@
 import axios from 'axios'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 import Input from '../../components/Input'
+import logo from '../../public/logo-nlw-esport.svg'
 
 export async function getServerSideProps(context) {
 
@@ -32,7 +34,7 @@ export default function Post(props) {
     <div className="w-full max-w-[1200px] mx-auto">
       <header className="mb-9">
         <Link href="/">
-          <h1 className="text-textColor text-center font-black sm:mt-14 text-3xl sm:text-5xl"> <span className="text-purple"> 	&lt; NLW </span> Esport <span className="text-purple"> &gt; </span> </h1>
+         <Image className="h-40 mx-auto" src={logo}/>
         </Link>
           
       </header>
