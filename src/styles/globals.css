@@ -5,4 +5,8 @@
 body {
   background: #121214;
   padding: 20px;
+  background-image: url(../public/nlw.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

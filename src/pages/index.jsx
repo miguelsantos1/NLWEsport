@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react'
 
 import Game from '../components/Game'
 import Link from 'next/link'
+import Image from 'next/image'
+
+import logo from '../public/logo-nlw-esport.svg' 
 
 
 export default function Home() {
@@ -10,9 +13,9 @@ export default function Home() {
 
   return (
     <div className="w-full max-w-[1200px] mx-auto">
-      <header>
-        <h1 className="text-textColor text-center font-black sm:mt-14 text-4xl sm:text-5xl"> <span className="text-purple"> 	&lt; NLW </span> Esport <span className="text-purple"> &gt; </span> </h1>
-        <h2 className="text-textColor text-center font-extrabold my-5 text-xl sm:mb-16 sm:text-4xl"> <span className="text-purple">G</span>ames</h2>
+      <header className="my-2">
+        <Image className="h-40 mx-auto" src={logo} />
+        <h2 className="text-textColor text-center font-extrabold my-5 text-xl sm:mb-16 sm:text-4xl"> <span className="text-purple"> &lt; G</span>ames / &gt;</h2>
       </header>
 
       <section className='grid grid-cols-2 gap-4  sm:grid-cols-3 mb-5 lg:grid-cols-4 xl:grid-cols-6 justify-items-center'>

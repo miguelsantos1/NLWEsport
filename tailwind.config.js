@@ -7,6 +7,11 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    extend: {
+      backgroundImage: {
+        galaxy: 'url("/src/public/nlw.png")'
+      }
+    },
     colors: {
       background: '#121214',
       textColor: '#ffff',

@@ -4,7 +4,11 @@ export default async function GetAdGTA(req, res) {
 
   const prisma = new PrismaClient()
 
-  const adGame = await prisma.GTA.findMany()
+  const adGame = await prisma.GTA.findMany({
+    orderBy: {
+      createdAt: 'desc'
+    }
+  })
 
   res.status(200).json(adGame)
 
