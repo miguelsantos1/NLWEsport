@@ -1,13 +1,12 @@
 import '../styles/globals.css'
 import Head from 'next/head'
-import { SessionProvider } from 'next-auth/react'
 
 function MyApp({ 
   Component,
-  pageProps: { session, ...pageProps } 
+  pageProps: { ...pageProps } 
 }) {
   return (
-  <SessionProvider session={session}>
+    <>
     <Head>
       <meta charset="UTF-8"/>
       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -24,7 +23,7 @@ function MyApp({
     </Head>
 
       <Component {...pageProps} />
-    </SessionProvider>
+      </>
   )
 }
 

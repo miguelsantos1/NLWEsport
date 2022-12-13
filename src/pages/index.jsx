@@ -7,27 +7,8 @@ import Image from 'next/image'
 
 import logo from '../public/logo-nlw-esport.svg' 
 
-import { DiscordLogo } from 'phosphor-react' 
-import { getSession, signIn } from 'next-auth/react'
-
-
-export async function getServerSideProps(context) {
-  const session = await getSession(context)
-
-  console.log(session.user.name)
-
-  return {
-    props: {
-      session
-    }
-  }
-}
 
 export default function Home(props) {
-
-  function signInDiscord() {
-    signIn('discord')
-  }
 
 
   return (
@@ -78,10 +59,6 @@ export default function Home(props) {
           <h3 className="text-textColor font-extrabold text-xl">Não encontrou seu DUO?</h3>
           <p className="text-textColor"> Publique um anúncio para encontrar novos players </p>
         </div>
-        <button onClick={signInDiscord} className="flex items-center gap-2 bg-[#202020] rounded px-4 py-2">
-          <DiscordLogo size={40} color="#cebdff" />
-          <p> { props.session?.user.name } </p>
-        </button>
       </footer>
 
     </div>
