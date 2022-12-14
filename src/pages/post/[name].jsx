@@ -41,7 +41,9 @@ export default function Post(props) {
 
       <main>
 
-        <h2 className="text-textColor text-center font-extrabold text-xl sm:mb-10 sm:text-4xl"> Publicar um anúncio em <br /> <h1 className="text-textColor text-center font-black mt-2 text-3xl"> <span className="text-purple"> &lt; </span>  { props.name.toUpperCase() } <span className="text-purple"> / &gt; </span> </h1></h2>
+        <h2 className="text-textColor text-center font-extrabold text-xl sm:mb-10 sm:text-4xl"> Publicar um anúncio em <br /> <h1 className="text-textColor text-center font-black mt-2 text-3xl"> <span className="text-purple"> &lt; </span> 
+         <Link href={`/game/${props.name}`}>{ props.name.toUpperCase() }</Link> 
+         <span className="text-purple"> / &gt; </span> </h1></h2>
         <form action={`/api/games/${props.name}/ad`} method="POST" className="flex flex-col gap-3 mt-5 max-w-lg mx-auto">
 
 
