@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import Loading from '../../components/Loading'
 import Ads from '../../components/Ads'
+import logo from '../../public/logo-nlw-esport.svg'
 
 export async function getServerSideProps(context) {
 
@@ -36,9 +38,11 @@ export default function Game(props) {
     <div className="w-full max-w-[1200px] mx-auto">
     <header>
     <Link href="/">
-      <h1 className="text-textColor text-center font-black sm:mt-14 text-3xl sm:text-5xl"> <span className="text-purple"> 	&lt; { nameToUpperCase } </span> <span className="text-purple"> &gt; </span> </h1>
+      <Image className="h-40 mx-auto" src={logo}/>
     </Link>
-      <h2 className="text-textColor text-center font-extrabold my-5 text-xl sm:mb-16">  <span className="text-purple"> 	&lt; </span> { game.length } Anúncio (s)<span className="text-purple"> &gt; </span></h2>
+    
+      <h1 className="text-textColor text-center font-black mt-2 text-3xl"> <span className="text-purple"> &lt; </span>  { nameToUpperCase } <span className="text-purple"> / &gt; </span> </h1>
+      <h2 className="text-textColor text-center font-extrabold mt-1 mb-10">  <span className="text-purple"> 	&lt; </span> { game.length } Anúncio (s)<span className="text-purple"> / &gt; </span></h2>
     </header>
 
 

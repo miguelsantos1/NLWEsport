@@ -41,7 +41,7 @@ export default function Post(props) {
 
       <main>
 
-        <h2 className="text-textColor text-center font-extrabold text-xl sm:mb-10 sm:text-4xl"> Publicar um anúncio em <br /> { props.name.toUpperCase() }</h2>
+        <h2 className="text-textColor text-center font-extrabold text-xl sm:mb-10 sm:text-4xl"> Publicar um anúncio em <br /> <h1 className="text-textColor text-center font-black mt-2 text-3xl"> <span className="text-purple"> &lt; </span>  { props.name.toUpperCase() } <span className="text-purple"> / &gt; </span> </h1></h2>
         <form action={`/api/games/${props.name}/ad`} method="POST" className="flex flex-col gap-3 mt-5 max-w-lg mx-auto">
 
 
@@ -51,7 +51,7 @@ export default function Post(props) {
           </select>
           <Input placeholder="nickname" name="nickname" />
           <Input type="number" max={100} placeholder="Anos jogando (tudo bem ser ZERO!)" name="yearsPlaying" />
-          <Input placeholder="Discord" name="discord"/>
+          <Input placeholder="Discord" name="discord" />
 
           <input className="px-2 py-4 bg-purple mt-2 text-textColor hover:bg-purple/60 cursor-pointer" type="submit" value="Postar!" />
 
