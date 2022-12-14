@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121214;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #302744;
+}
+
 body {
   background: #121214;
   padding: 20px;
@@ -9,4 +21,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  width: 100%;
+  max-width: 1000px;
+  margin: auto
 }
+

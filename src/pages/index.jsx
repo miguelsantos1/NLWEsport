@@ -12,13 +12,13 @@ export default function Home(props) {
 
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto">
+    <div>
       <header className="my-2">
         <Image className="h-40 mx-auto" src={logo} />
         <h2 className="text-textColor text-center font-extrabold my-5 text-xl sm:mb-16 sm:text-4xl"> <span className="text-purple"> &lt; G</span>ames <span className="text-purple"> / &gt; </span></h2>
       </header>
 
-      <section className='grid grid-cols-2 gap-4  sm:grid-cols-3 mb-5 lg:grid-cols-4 xl:grid-cols-6 justify-items-center'>
+      <section className='grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-6 mb-5 justify-items-center'>
       
           <Link href={`game/valorant`}>
             <Game

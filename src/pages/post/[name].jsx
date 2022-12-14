@@ -31,7 +31,7 @@ export default function Post(props) {
 
   return(
 
-    <div className="w-full max-w-[1200px] mx-auto">
+    <div>
       <header className="mb-9">
         <Link href="/">
          <Image className="h-40 mx-auto" src={logo}/>
