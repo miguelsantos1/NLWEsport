@@ -51,9 +51,9 @@ export default function Post(props) {
             <option>{ props.name.toUpperCase() }</option>
   
           </select>
-          <Input placeholder="nickname" name="nickname" />
+          <Input placeholder="nickname" maxLength={17} name="nickname" />
           <Input type="number" max={100} placeholder="Anos jogando (tudo bem ser ZERO!)" name="yearsPlaying" />
-          <Input placeholder="Discord" name="discord" />
+          <Input placeholder="Discord" maxLength={20} name="discord" />
 
           <input className="px-2 py-4 bg-purple mt-2 text-textColor hover:bg-purple/60 cursor-pointer" type="submit" value="Postar!" />
 

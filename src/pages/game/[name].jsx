@@ -52,7 +52,7 @@ export default function Game(props) {
 
 
           {!removeLoading && <Loading />}
-      <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 mb-20">
+      <section className="grid grid-cols-1 gap-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 mb-20">
 
           { game.map(ads => {
             return(
