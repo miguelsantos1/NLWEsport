@@ -19,6 +19,7 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 ### 🟢 MELHORIAS FEITAS
 
 - Mudança de SQLITE para MONGODB
+- Mudança de REACTJS e NODEJS para NEXTJS
 - Hospedagem na Vercel
 - Responsividade
 
