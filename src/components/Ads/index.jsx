@@ -1,4 +1,5 @@
-import { DiscordLogo } from "phosphor-react"
+import { DiscordLogo, CircleWavyCheck } from "phosphor-react"
+import * as Dialog from '@radix-ui/react-dialog';
 
 export default function Ads(props) {
 
@@ -21,7 +22,26 @@ export default function Ads(props) {
             <DiscordLogo size={20} color="#cebdff" />
             <p className="font-semibold"> { discordToLowerCase } </p>
           </div> 
-          <p className="font-semibold mt-1"> { plusThan0 || equal0 }  </p>
+          <p className="font-semibold mt-1 mb-10"> { plusThan0 || equal0 }  </p>
+
+          <Dialog.Root>
+            <Dialog.Trigger> 
+            <button className="bg-purple/50 hover:bg-purple/30 py-2 px-10 rounded">
+                Conectar
+            </button>
+            </Dialog.Trigger>
+            <Dialog.Portal>
+              <Dialog.Content className="flex flex-col fixed rounded px-4 py-10 top-1/2 left-2/4 -translate-x-1/2 -translate-y-1/2 bg-[#202020]">
+                <CircleWavyCheck size={70} color="#00803e" className=" mb-2 self-center" />
+                <h1 className="font-bold text-2xl text-textColor text-center my-4"> Agora é só adicionar! </h1>
+                <p className="text-textColor/30 text-center"> Discord </p>
+                <p className="bg-purple/40 hover:bg-purple/30 py-2 rounded text-textColor text-center mt-2"> { discordToLowerCase } </p>
+                <Dialog.Description />
+                
+                <Dialog.Close />
+              </Dialog.Content>
+            </Dialog.Portal>
+  </Dialog.Root>
       </div>
   )
 }
