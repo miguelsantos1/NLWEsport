@@ -26,7 +26,7 @@ export default function Ads(props) {
 
           <Dialog.Root>
             <Dialog.Trigger> 
-            <button className="bg-purple/50 hover:bg-purple/30 py-2 px-10 rounded">
+            <button className="bg-purple/50 font-semibold hover:bg-purple/30 py-2 px-10 rounded">
                 Conectar
             </button>
             </Dialog.Trigger>
@@ -35,7 +35,7 @@ export default function Ads(props) {
                 <CircleWavyCheck size={70} color="#00803e" className=" mb-2 self-center" />
                 <h1 className="font-bold text-2xl text-textColor text-center my-4"> Agora é só adicionar! </h1>
                 <p className="text-textColor/30 text-center"> Discord </p>
-                <p className="bg-purple/40 hover:bg-purple/30 py-2 rounded text-textColor text-center mt-2"> { discordToLowerCase } </p>
+                <p className="bg-purple/40 hover:bg-purple/30 py-2 font-bold rounded text-textColor text-center mt-2"> { discordToLowerCase } </p>
                 <Dialog.Description />
                 
                 <Dialog.Close />
