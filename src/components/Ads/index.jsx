@@ -31,7 +31,7 @@ export default function Ads(props) {
             </button>
             </Dialog.Trigger>
             <Dialog.Portal>
-              <Dialog.Content className="flex flex-col fixed rounded px-4 py-10 top-1/2 left-2/4 -translate-x-1/2 -translate-y-1/2 bg-[#202020]">
+              <Dialog.Content className="flex flex-col fixed w-4/5 sm:w-auto rounded px-4 py-10 top-1/2 left-2/4 -translate-x-1/2 -translate-y-1/2 bg-[#202020]">
                 <CircleWavyCheck size={70} color="#00803e" className=" mb-2 self-center" />
                 <h1 className="font-bold text-2xl text-textColor text-center my-4"> Agora é só adicionar! </h1>
                 <p className="text-textColor/30 text-center"> Discord </p>
