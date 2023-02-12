@@ -22,7 +22,7 @@ export default function Ads(props) {
             <DiscordLogo size={20} color="#cebdff" />
             <p className="font-semibold"> { discordToLowerCase } </p>
           </div> 
-          <p className="font-semibold mt-1 mb-10"> { plusThan0 || equal0 }  </p>
+          <p className="font-semibold mt-1 mb-3"> { plusThan0 || equal0 }  </p>
 
           <Dialog.Root>
             <Dialog.Trigger> 
