@@ -27,3 +27,37 @@ body {
   margin: auto
 }
 
+
+.postNotification {
+  position: fixed;
+  z-index: 100;
+  bottom: 40px;
+  right: 20px;
+
+  color: rgba(255, 255, 255, 0.753);
+  font-weight: bold;
+
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: rgba(45, 0, 71, 0.144);
+  padding: 20px 40px;
+  border-radius: 10px;
+
+  animation-name: notification;
+  animation-timing-function: ease;
+  animation-duration: .5s;
+
+  display: none;
+}
+
+@keyframes notification {
+  0% {
+    opacity: 0;
+    transform: translate(50px);
+    
+  } 100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
