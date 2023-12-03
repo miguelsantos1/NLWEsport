@@ -49,9 +49,9 @@ export default function Post(props) {
     }).then((response) => {
       console.log(response)
       notification.style.display = "flex"
-      setTimeout(3000, () => {
+      setTimeout(() => {
         notification.style.display = "none"
-      })
+      }, 3000)
 
     })
 
